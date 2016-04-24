@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">OnfidoComicFetcher</string>
+
+    <string name="fetching_comic_title">Getting the latest comic</string>
+    <string name="fetching_comic_message">Please wait.</string>
+
+    <string name="placeholder_image">Image</string>
+
+    <string name="error_title">Woops, an error occured</string>
+    <string name="error_message_interface_not_set">You must call ComicButton#setInterface(simon.nicolas.comicfetcher.ComicInterface)</string>
+    <string name="error_message_network_failed">There has been an error contacting the remote server. Please try again later.</string>
+    <string name="error_message_network_not_connected">You don\'t seem to be connected to Internet. Please connect to a simon.nicolas.comicfetcher.network and try again later.</string>
+    <string name="error_message_parsing">There has been an error while parsing the data from the remote server.</string>
+    <string name="error_message_else">There has been an error. Please try again later.</string>
+
+    <string name="button_retry">Retry</string>
+    <string name="button_cancel">Cancel</string>
+</resources>

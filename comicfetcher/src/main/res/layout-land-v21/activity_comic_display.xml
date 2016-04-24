@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="simon.nicolas.comicfetcher.activity.ComicDisplayActivity">
+    <include
+        android:id="@+id/buttonsLayout"
+        layout="@layout/thumbs_layout"
+        android:layout_alignParentEnd="true"
+        android:layout_height="match_parent"
+        android:layout_width="wrap_content"/>
+    <FrameLayout
+        android:id="@+id/displaySwitcher"
+        android:layout_toStartOf="@id/buttonsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/comicImage"
+            android:scaleType="fitXY"
+            android:contentDescription="@string/placeholder_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/comicDescription"
+            android:textSize="@dimen/description_font_size"
+            android:background="@android:color/white"
+            android:visibility="invisible"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+    <View
+        android:background="@android:color/black"
+        android:layout_width="2dp"
+        android:layout_height="match_parent"
+        android:layout_toStartOf="@id/buttonsLayout"/>
+    <TextView
+        android:id="@+id/comicTitle"
+        android:layout_toStartOf="@id/buttonsLayout"
+        android:textSize="@dimen/title_font_size"
+        android:padding="@dimen/title_padding"
+        android:gravity="end"
+        android:textColor="@android:color/white"
+        android:background="@drawable/title_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <View
+        android:background="@android:color/black"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/comicTitle"
+        android:layout_toStartOf="@id/buttonsLayout"/>
+</RelativeLayout>

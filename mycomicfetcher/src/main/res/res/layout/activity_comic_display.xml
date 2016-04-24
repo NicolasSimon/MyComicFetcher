@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".simon.nicolas.comicfetcher.activity.ComicDisplayActivity">
+    <include
+        android:id="@+id/buttonsLayout"
+        layout="@layout/thumbs_layout"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"/>
+    <TextView
+        android:id="@+id/comicTitle"
+        android:textSize="@dimen/title_font_size"
+        android:padding="@dimen/title_padding"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:background="@color/gradient_semi_black"
+        android:layout_above="@id/buttonsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <ViewSwitcher
+        android:id="@+id/viewSwitcher"
+        android:layout_above="@id/comicTitle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/comicImage"
+            android:scaleType="fitCenter"
+            android:contentDescription="@string/placeholder_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/comicDescription"
+            android:textSize="@dimen/description_font_size"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </ViewSwitcher>
+</RelativeLayout>

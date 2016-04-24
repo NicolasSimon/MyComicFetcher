@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="gradient_semi_black">#66000000</color>
+    <color name="gradient_semi_white">#66FFFFFF</color>
+
+    <color name="lightGreenBackground">#6600FF00</color>
+    <color name="lightRedBackground">#66FF0000</color>
+    <color name="lightGreenBackgroundPressed">#9900FF66</color>
+    <color name="lightRedBackgroundPressed">#99FF0066</color>
+</resources>

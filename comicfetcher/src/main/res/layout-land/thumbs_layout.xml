@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:weightSum="2"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+    <ImageView
+        android:background="@drawable/up_background"
+        android:src="@mipmap/thumbsup"
+        android:id="@+id/thumbsUp"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp" />
+    <View
+        android:background="@android:color/black"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"/>
+    <ImageView
+        android:background="@drawable/down_background"
+        android:src="@mipmap/thumbsdown"
+        android:id="@+id/thumbsDown"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp" />
+</LinearLayout>
